@@ -23,10 +23,10 @@ public class Bag_Script : MonoBehaviour
         BagOverlayIsEnabled = false;
         BagOverlay.SetActive(BagOverlayIsEnabled);
 
-        Item1AmountText = GameObject.Find("Item1AmountText").GetComponent<Text>();
-        Item1AmountText = GameObject.Find("Item2AmountText").GetComponent<Text>();
-        Item1AmountText = GameObject.Find("Item3AmountText").GetComponent<Text>();
-        Item1AmountText = GameObject.Find("Item4AmountText").GetComponent<Text>();
+      //  Item1AmountText = GameObject.Find("Item1AmountText").GetComponent<Text>();
+      //  Item1AmountText = GameObject.Find("Item2AmountText").GetComponent<Text>();
+      //  Item1AmountText = GameObject.Find("Item3AmountText").GetComponent<Text>();
+       // Item1AmountText = GameObject.Find("Item4AmountText").GetComponent<Text>();
 
     }   
 
