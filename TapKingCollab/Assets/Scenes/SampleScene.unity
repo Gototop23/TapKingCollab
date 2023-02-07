@@ -212,6 +212,7 @@ GameObject:
   - component: {fileID: 25930171}
   - component: {fileID: 25930170}
   - component: {fileID: 25930169}
+  - component: {fileID: 25930172}
   m_Layer: 5
   m_Name: AutoDMGplusButton
   m_TagString: Untagged
@@ -322,6 +323,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 25930167}
   m_CullTransparentMesh: 1
+--- !u!114 &25930172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25930167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cc5dd9c01e40614fab17ca0f0b76e65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IncreaseAutoDMGby10Text: {fileID: 1927108009}
+  LevelPointsSpended: 0
 --- !u!1 &61312963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,6 +1045,7 @@ GameObject:
   - component: {fileID: 458101196}
   - component: {fileID: 458101195}
   - component: {fileID: 458101194}
+  - component: {fileID: 458101197}
   m_Layer: 5
   m_Name: DMGminButton
   m_TagString: Untagged
@@ -1140,6 +1156,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458101192}
   m_CullTransparentMesh: 1
+--- !u!114 &458101197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458101192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b602585aabb3c4ebf42dbe5dfe44ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DecreaseDMGby10Text: {fileID: 1998502758}
+  LevelPointsReverted: 0
 --- !u!1 &490614855
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,6 +1512,7 @@ GameObject:
   - component: {fileID: 627077473}
   - component: {fileID: 627077472}
   - component: {fileID: 627077471}
+  - component: {fileID: 627077474}
   m_Layer: 5
   m_Name: AutoDMGminButton
   m_TagString: Untagged
@@ -1592,6 +1623,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 627077469}
   m_CullTransparentMesh: 1
+--- !u!114 &627077474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627077469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e5ccc97a33011444ae06b8597d9158b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DecreaseAutoDMGby10Text: {fileID: 0}
+  LevelPointsReverted: 0
 --- !u!1 &645964276
 GameObject:
   m_ObjectHideFlags: 0
@@ -1718,6 +1763,7 @@ GameObject:
   - component: {fileID: 720638518}
   - component: {fileID: 720638517}
   - component: {fileID: 720638516}
+  - component: {fileID: 720638519}
   m_Layer: 5
   m_Name: CritplusButton
   m_TagString: Untagged
@@ -1828,6 +1874,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720638514}
   m_CullTransparentMesh: 1
+--- !u!114 &720638519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720638514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45422f78ff236c140bcf7df79dc1c438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IncreaseCRITby10Text: {fileID: 1669507653}
+  LevelPointsSpended: 0
 --- !u!1 &747014405
 GameObject:
   m_ObjectHideFlags: 0
@@ -2139,6 +2199,7 @@ GameObject:
   - component: {fileID: 882220178}
   - component: {fileID: 882220177}
   - component: {fileID: 882220176}
+  - component: {fileID: 882220179}
   m_Layer: 5
   m_Name: DMGplusButton
   m_TagString: Untagged
@@ -2249,6 +2310,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882220174}
   m_CullTransparentMesh: 1
+--- !u!114 &882220179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882220174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e1fac1fd8ab34e40ab0343ab747a3e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IncreaseDMGby10Text: {fileID: 1655684086}
+  LevelPointsSpended: 0
 --- !u!1 &913571739
 GameObject:
   m_ObjectHideFlags: 0
@@ -4465,6 +4540,7 @@ GameObject:
   - component: {fileID: 1747465543}
   - component: {fileID: 1747465542}
   - component: {fileID: 1747465541}
+  - component: {fileID: 1747465544}
   m_Layer: 5
   m_Name: CritminButton
   m_TagString: Untagged
@@ -4575,6 +4651,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747465539}
   m_CullTransparentMesh: 1
+--- !u!114 &1747465544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747465539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfffbd002dba18e40b7b5aae44ef61fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DecreaseCRITby10Text: {fileID: 0}
+  LevelPointsReverted: 0
 --- !u!1 &1748392070
 GameObject:
   m_ObjectHideFlags: 0
@@ -5511,6 +5601,10 @@ PrefabInstance:
     - target: {fileID: 1769771549522658554, guid: 84b0d953e3dfd1c4f9bc2a9c6d9f3fee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769771549522658555, guid: 84b0d953e3dfd1c4f9bc2a9c6d9f3fee, type: 3}
+      propertyPath: MaxHealth
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1769771549522658555, guid: 84b0d953e3dfd1c4f9bc2a9c6d9f3fee, type: 3}
       propertyPath: bossHPText
