@@ -47,7 +47,7 @@ private void Start()
 
    spriteRenderer.enabled = true;
 
-   scaleLevelStart = 1;
+   scaleLevelStart = 0;
 
    scaleLevelLevel = scaleLevelStart + scaleLevel;
 

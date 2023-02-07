@@ -3911,6 +3911,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5163735859621859203, guid: e66e33d8d7672974f9509ce8e603c64b, type: 3}
+      propertyPath: Health
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5163735859621859203, guid: e66e33d8d7672974f9509ce8e603c64b, type: 3}
       propertyPath: CurrencyText
       value: 
       objectReference: {fileID: 315459429}
