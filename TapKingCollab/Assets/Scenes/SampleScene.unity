@@ -948,7 +948,7 @@ MonoBehaviour:
   AutoDMG: 0
   critChanceText: {fileID: 1669507653}
   autoDMGText: {fileID: 1927108009}
-  floatingTextPrefab: {fileID: 4038839409832199875, guid: abc11c7cce72c7543859e6c4e44c5d35, type: 3}
+  floatingTextPrefab: {fileID: 1987778169549653505, guid: 24f5855401bce0a42ba1b9dd2a40bf91, type: 3}
 --- !u!1 &417422910
 GameObject:
   m_ObjectHideFlags: 0
@@ -3501,6 +3501,7 @@ GameObject:
   - component: {fileID: 1432478962}
   - component: {fileID: 1432478961}
   - component: {fileID: 1432478960}
+  - component: {fileID: 1432478963}
   m_Layer: 5
   m_Name: ButtonBuy1000
   m_TagString: Untagged
@@ -3611,6 +3612,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1432478958}
   m_CullTransparentMesh: 1
+--- !u!114 &1432478963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432478958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d2268ffda734664a833c2d487d85d54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrencyAmount: {fileID: 0}
 --- !u!1 &1527914698
 GameObject:
   m_ObjectHideFlags: 0

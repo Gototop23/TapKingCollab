@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1102 &-6846644555674129248
+--- !u!1102 &-9080500311651725774
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
@@ -20,7 +20,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 2559f9e323359f040866d63bdbb9f2bb, type: 2}
+  m_Motion: {fileID: 7400000, guid: dd0f9d470a3c02b45ace6e535a7c6dbe, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -37,8 +37,8 @@ AnimatorController:
   m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 5
-    m_Name: Base Layer
-    m_StateMachine: {fileID: 7303962501922787517}
+    m_Name: New Layer
+    m_StateMachine: {fileID: 4965542746450928091}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
@@ -48,25 +48,25 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1107 &7303962501922787517
+--- !u!1107 &4965542746450928091
 AnimatorStateMachine:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Base Layer
+  m_Name: New Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: -6846644555674129248}
-    m_Position: {x: 300, y: 110, z: 0}
+    m_State: {fileID: -9080500311651725774}
+    m_Position: {x: 310, y: 110, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 570, y: 120, z: 0}
+  m_AnyStatePosition: {x: 580, y: 120, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -6846644555674129248}
+  m_DefaultState: {fileID: -9080500311651725774}
