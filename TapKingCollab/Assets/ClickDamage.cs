@@ -13,8 +13,13 @@
      Enemy_Script enemyHealth;                    // Reference to script van enemy health.
      public float critChance;
      public float AutoDMG;
+
      public Text critChanceText;
      public Text autoDMGText;
+     public Text clickDMGText;
+     public Text CritDMGText;
+
+     public float critDMG;
 
     float interval = 0.25f;
     float timer = 0;
@@ -40,6 +45,7 @@
         damagePerClick = 20;
         critChance = 0.05f;
         AutoDMG = 0;
+        critDMG = 2;
      }
  
     void IncreaseCritChance(float critInc)
@@ -71,6 +77,8 @@
 
             critChanceText.text = (critChance * 100).ToString();
             autoDMGText.text = AutoDMG.ToString();
+            clickDMGText.text = damagePerClick.ToString();
+            CritDMGText.text = (critDMG * 100 + "%").ToString();
 
             enemyHealth = FindObjectOfType<Enemy_Script>();
 
@@ -108,7 +116,18 @@
                 LevelPoints_Script.AutoDMGmin.SetActive(LevelPoints_Script.AutoDMGminIsEnabled);
 
                 LevelPoints_Script.AutoDMGplusCounterIsEnabled = false;
-                LevelPoints_Script.AutoDMGplusCounter.SetActive(LevelPoints_Script.AutoDMGplusCounterIsEnabled);
+                LevelPoints_Script.AutoDMGplusCounter.SetActive(LevelPoints_Script.CritDMGplusCounterIsEnabled);
+
+                LevelPoints_Script.CritDMGminIsEnabled = false;
+                LevelPoints_Script.CritDMGmin.SetActive(LevelPoints_Script.CritDMGminIsEnabled);
+
+                LevelPoints_Script.CritDMGplusIsEnabled = false; 
+                LevelPoints_Script.CritDMGplus.SetActive(LevelPoints_Script.CritDMGplusIsEnabled);
+
+                LevelPoints_Script.CritDMGplusCounterIsEnabled = false;
+                LevelPoints_Script.CritDMGplusCounter.SetActive(LevelPoints_Script.CritDMGplusCounterIsEnabled);
+
+
 
                 Bag_Script.BagOverlayIsEnabled = false;
                 Bag_Script.BagOverlay.SetActive(Bag_Script.BagOverlayIsEnabled);
@@ -121,7 +140,7 @@
                 {
                 Debug.Log("did critical attack");
                 enemyHealth.Health -= damagePerClick * 2; //damage per click
-                ShowDamage((damagePerClick * 2).ToString());
+                ShowDamage((damagePerClick * critDMG).ToString());
                 }
                 else
                 {

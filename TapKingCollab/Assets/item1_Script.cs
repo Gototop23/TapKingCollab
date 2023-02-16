@@ -9,6 +9,8 @@ public class item1_Script : MonoBehaviour
     public GameObject Item1Count;
     public Text item1Count;
 
+
+
     void Start()
     {
         item1Count = GameObject.Find("Item 1 count").GetComponent<Text>();
