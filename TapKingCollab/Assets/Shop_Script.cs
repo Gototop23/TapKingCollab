@@ -36,35 +36,4 @@ public class Shop_Script : MonoBehaviour
     }
 
 
-    void Update()
-    {
-        CurrencyCount = FindObjectOfType<Enemy_Script>();
-
-        if(CurrencyCount.Currency >= 1000)
-        {
-            ButtonBuy1000.interactable = true;
-        }
-        else 
-        {
-            ButtonBuy1000.interactable = false;
-        }
-
-        if(CurrencyCount.Currency >= 5000)
-        {
-            ButtonBuy5000.interactable = true;
-        }
-        else
-        {
-            ButtonBuy5000.interactable = false;
-        }
-
-        if(CurrencyCount.Currency >= 10000)
-        {
-            Buttonbuy10000.interactable = true;
-        }
-        else
-        {
-            Buttonbuy10000.interactable = false;
-        }
-    }
 }

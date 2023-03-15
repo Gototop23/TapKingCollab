@@ -28,6 +28,7 @@
     LevelPoints_Script LevelPoints_Script;
     Shop_Script Shop_Script;
     Bag_Script Bag_Script;
+    Artifacts_Script Artifacts_Script;
 
 
      [SerializeField] private GameObject floatingTextPrefab;
@@ -87,6 +88,7 @@
                 LevelPoints_Script = FindObjectOfType<LevelPoints_Script>();
                 Shop_Script = FindObjectOfType<Shop_Script>();
                 Bag_Script = FindObjectOfType<Bag_Script>();
+                Artifacts_Script = FindObjectOfType<Artifacts_Script>();
 
                 LevelPoints_Script.LevelPointsOverlayIsEnabled = false;
                 LevelPoints_Script.LevelPointsOverlay.SetActive(LevelPoints_Script.LevelPointsOverlayIsEnabled);
@@ -134,6 +136,9 @@
 
                 Shop_Script.BuyOverlayIsEnabled = false;
                 Shop_Script.BuyOverlay.SetActive(Shop_Script.BuyOverlayIsEnabled);
+
+                Artifacts_Script.ArtifactsOverlayIsEnabled = false;
+                Artifacts_Script.ArtifactsOverlay.SetActive(Artifacts_Script.ArtifactsOverlayIsEnabled);
 
                 float randValue = Random.value;
                 if(randValue < critChance)
