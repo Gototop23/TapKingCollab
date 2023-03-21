@@ -17,6 +17,9 @@ public class LevelPoints_Script : MonoBehaviour
     public GameObject AutoDMGplus;
     public GameObject AutoDMGmin;
     public GameObject AutoDMGplusCounter;
+    public GameObject CritDMGplus;
+    public GameObject CritDMGmin;
+    public GameObject CritDMGplusCounter;
 
     public bool LevelPointsOverlayIsEnabled;
     public bool DMGminIsEnabled;
@@ -28,6 +31,9 @@ public class LevelPoints_Script : MonoBehaviour
     public bool AutoDMGplusIsEnabled;
     public bool AutoDMGminIsEnabled;
     public bool AutoDMGplusCounterIsEnabled;
+    public bool CritDMGplusIsEnabled;
+    public bool CritDMGminIsEnabled;
+    public bool CritDMGplusCounterIsEnabled;
 
     public int LevelPointsP1;
     public int LevelPointsP2;
@@ -42,6 +48,8 @@ public class LevelPoints_Script : MonoBehaviour
     public Button ButtonCRITplus;
     public Button ButtonDMGautomin;
     public Button ButtonDMGautoplus;
+    public Button ButtonCritDMGmin;
+    public Button ButtonCritDMGplus;
 
     
     Enemy_Script BossLevelPoints;
@@ -51,6 +59,8 @@ public class LevelPoints_Script : MonoBehaviour
     CritminButton LevelPointsReverted3;
     AutoDMGplusButton LevelPointsSpended4;
     AutoDMGminButton LevelPointsReverted4;
+    CritDMGplusButton LevelPointsSpended5;
+    CritDMGminButton LevelPointsReverted5;
     ClickDamage ClickDamageScript;
 
     void Awake()
@@ -98,6 +108,15 @@ public class LevelPoints_Script : MonoBehaviour
         AutoDMGplusCounterIsEnabled = false;
         AutoDMGplusCounter.SetActive(AutoDMGplusCounterIsEnabled);
 
+        CritDMGplusIsEnabled = false;
+        CritDMGplus.SetActive(CritDMGplusIsEnabled);
+
+        CritDMGminIsEnabled = false;
+        CritDMGmin.SetActive(CritDMGminIsEnabled);
+
+        CritDMGplusCounterIsEnabled = false;
+        CritDMGplusCounter.SetActive(CritDMGplusCounterIsEnabled);
+
 
     }
 
@@ -133,6 +152,15 @@ public class LevelPoints_Script : MonoBehaviour
         AutoDMGplusCounterIsEnabled ^= true;
         AutoDMGplusCounter.SetActive(AutoDMGplusCounterIsEnabled);
 
+        CritDMGplusIsEnabled ^= true;
+        CritDMGplus.SetActive(CritDMGplusIsEnabled);
+
+        CritDMGminIsEnabled ^= true;
+        CritDMGmin.SetActive(CritDMGminIsEnabled);
+        
+        CritDMGplusCounterIsEnabled ^= true;
+        CritDMGplusCounter.SetActive(CritDMGplusCounterIsEnabled);
+
     }
 
     // Update is called once per frame
@@ -145,11 +173,14 @@ public class LevelPoints_Script : MonoBehaviour
         LevelPointsReverted3 =  FindObjectOfType<CritminButton>();
         LevelPointsSpended4 = FindObjectOfType<AutoDMGplusButton>();
         LevelPointsReverted4 = FindObjectOfType<AutoDMGminButton>();
+        LevelPointsSpended5 = FindObjectOfType<CritDMGplusButton>();
+        LevelPointsReverted5 = FindObjectOfType<CritDMGminButton>();
+
         ClickDamageScript = FindObjectOfType<ClickDamage>();
 
 
         LevelPoints = LevelPointsP1; 
-        LevelPointsP1 = BossLevelPoints.bossLevel - LevelPointsSpended2.LevelPointsSpended - LevelPointsSpended3.LevelPointsSpended - LevelPointsSpended4.LevelPointsSpended;
+        LevelPointsP1 = BossLevelPoints.bossLevel - LevelPointsSpended2.LevelPointsSpended - LevelPointsSpended3.LevelPointsSpended - LevelPointsSpended4.LevelPointsSpended - LevelPointsSpended5.LevelPointsSpended;
         CurrentLevelPointsText.text = LevelPoints.ToString();
 
 
@@ -192,15 +223,6 @@ public class LevelPoints_Script : MonoBehaviour
             ButtonCRITplus.interactable = false;
         }
 
-        if (ClickDamageScript.critChance < 1)
-        {
-            ButtonCRITplus.interactable = true;
-        }
-        else
-        {
-            ButtonCRITplus.interactable = false;
-        }
-
         if(LevelPointsReverted4.LevelPointsReverted > 0)
         {
             ButtonDMGautomin.interactable = true;
@@ -218,6 +240,26 @@ public class LevelPoints_Script : MonoBehaviour
         {
             ButtonDMGautoplus.interactable = false;
         }
+
+        if(LevelPointsReverted5.LevelPointsReverted > 0)
+        {
+            ButtonCritDMGmin.interactable = true;
+        }
+        else
+        {
+            ButtonCritDMGmin.interactable = false;
+        }
+
+        if (LevelPoints > 0)
+        {
+            ButtonCritDMGplus.interactable = true;
+        }
+        else 
+        {
+            ButtonCritDMGplus.interactable = false;
+        }
+
+        
 
 }
 
